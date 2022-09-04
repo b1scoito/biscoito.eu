@@ -9,10 +9,10 @@ tags = ["data-gathering", "data-analysis", "ideological-analysis", "rocketseat"]
 +++
 
 # How it all started
-I've always heard that Rocketseat had a bad reputation from my friends, that made me question myself why, upon reviewing their YouTube channel where they publish simple tutorials/guides about web frameworks/technologies I realized that they wanted to somewhat help the web development community, but after seeing their courses, it made me sad, because basically, what they were doing was, teaching basic framework/technology knowledge, not _really_ teaching programming logic, how the language actually worked and such. All that to make you get a easy job,
+I've always heard that Rocketseat had a bad reputation from my friends, that made me question myself why, upon reviewing their YouTube channel where they publish simple tutorials/guides about web frameworks/technologies I realized that they wanted to somewhat help the web development community, but after seeing their paid courses,
 
 # Talking Discord
-I also realized a pattern between the time of day, late at night, specific groups of people would join the Discord server and discuss about something random
+I also realized a pattern between the time of day, late at night, specific groups of people would join the Discord server and discuss about something
 
 # Data Analysis
 So far OSes:
