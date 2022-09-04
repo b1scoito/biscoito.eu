@@ -1,3 +1,56 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://www.biscoito.eu"
+title = "biscoito"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 20
+enableEmoji = true
+
+[params]
+author = "biscoito"
+license = '<a rel="license" href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPL v3</a>'
+description = "biscuit's personal thoughts"
+dateFormat = "January 2, 2006"
+since = 2021
+
+# Specify light/dark colorscheme
+# Supported values:
+# "auto" (use preference set by browser)
+# "dark" (dark background, light foreground)
+# "light" (light background, dark foreground) (default)
+colorScheme = "auto"
+
+# Hide the toggle button, along with the associated vertical divider
+hideColorSchemeToggle = false
+
+# Series see also post count
+maxSeeAlsoItems = 5
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[[params.social]]
+name = "GitHub"
+icon = "fa fa-2x fa-github"
+weight = 1
+url = "https://github.com/b1scoito"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-2x fa-linkedin"
+weight = 2
+url = "https://www.linkedin.com/in/~biscoito"
+
+[[params.social]]
+name = "Mail"
+icon = "fa fa-2x fa-envelope"
+weight = 3
+url = "mailto:eu@biscoito.eu"
+
+[[languages.en.menu.main]]
+name = "blog"
+weight = 1
+url = "posts/"
