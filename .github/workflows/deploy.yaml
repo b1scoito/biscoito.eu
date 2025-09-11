@@ -1,0 +1,30 @@
+name: Build and Deploy Zola Site
+
+on:
+  push:
+    branches:
+      - main # Trigger on push to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Install Zola ⚡
+        uses: taiki-e/install-action@zola
+
+      - name: Build Site 🔨
+        run: zola build
+
+      - name: Deploy to Server 🚀
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.VPS_HOST }}
+          REMOTE_USER: ${{ secrets.VPS_USER }}
+          TARGET: ${{ secrets.VPS_TARGET_DIR }}
+          SOURCE: "public/" # Zola builds to the 'public' directory
+          EXCLUDE: "/.git/, /.github/"
+          ARGS: "-rltgoDzvO --delete" # Use rsync options for efficiency
