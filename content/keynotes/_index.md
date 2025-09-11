@@ -1,11 +1,11 @@
 +++
-title = "Keynotes & Speaking"
-description = "Conference presentations, keynotes, and speaking engagements"
+title = "biscoito – keynotes"
+description = "Conference presentations and keynotes"
 template = "prose.html"
 
 [extra]
 lang = "en"
-title = "Keynotes & Speaking"
+title = "Keynotes"
 subtitle = "Conference presentations and keynotes"
 +++
 
