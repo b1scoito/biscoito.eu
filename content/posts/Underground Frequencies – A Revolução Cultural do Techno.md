@@ -7,7 +7,7 @@ draft = false
 
 [taxonomies]
 categories = ["music", "history"]
-tags = ["techno", "music", "history", "dub techno", "deep techno", "hypnotic techno"]
+tags = ["techno", "music", "history", "dub-techno", "deep-techno", "hypnotic-techno"]
 
 [extra]
 lang = "pt"
