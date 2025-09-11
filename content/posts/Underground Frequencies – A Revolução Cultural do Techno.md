@@ -6,8 +6,8 @@ updated = 2025-09-10 # optional
 draft = false # optional
 
 [taxonomies]
-categories = ["music"]
-tags = ["techno", "music", "history"]
+categories = ["music", "history"]
+tags = ["techno", "music", "history", "dub techno", "deep techno", "hypnotic techno"]
 
 [extra]
 lang = "pt"
