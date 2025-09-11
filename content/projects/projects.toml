@@ -1,0 +1,84 @@
+# Security Research & CVEs
+[[collection]]
+type = "card"
+title = "CVE-2024-21338"
+subtitle = "Windows Local Privilege Escalation"
+link = "https://github.com/hakaioffsec/CVE-2024-21338"
+content = "Windows Local Privilege Escalation (LPE) that allows an attacker to achieve kernel memory space access from user-land, elevated processes, thus leading to a Admin-To-Kernel LPE vulnerability. Works by manipulating Windows Access Tokens and a specifically crafted input buffer to a IOCTL function."
+tags = ["cve", "windows", "kernel", "lpe", "research"]
+featured = true
+date = "2024"
+
+[[collection]]
+type = "card"
+title = "Coffee"
+subtitle = "Rust COFF Loader"
+link = "https://github.com/hakaioffsec/coffee"
+content = "Custom implementation of Cobalt Strike's beacon_inline_execute written in Rust. Explores COFF (Common Object File Format) and how it can be dynamically loaded using relocations in the loader's memory. Led to research project and presentation at Ekoparty 2023."
+tags = ["rust", "coff", "red-team", "cobalt-strike"]
+featured = true
+date = "2023"
+
+[[collection]]
+type = "card"
+title = "RustAdventure"
+subtitle = "Game Hacking in Rust"
+link = "https://github.com/b1scoito/rustadventure"
+content = "DLL made in Rust as a fun project based on PwnAdventure3. Explores process memory hooking using detour and trampoline hooking, as well as reading structure pointers to achieve what's needed in the game."
+tags = ["rust", "game-hacking", "dll", "memory-hooking"]
+date = "2023"
+
+[[collection]]
+type = "card"
+title = "rust-clr-loader"
+subtitle = "CLR Hosting in Rust"
+link = "https://github.com/b1scoito/rust-clr-loader"
+content = "Native Rust implementation of the CLR hosting interfaces, which is the Core Language Runtime used by .NET to load managed binaries in native processes. Allows .NET managed binaries to be loaded in Rust native processes."
+tags = ["rust", "clr", "dotnet", "native"]
+date = "2023"
+
+[[collection]]
+type = "card"
+title = "cozinha_loader"
+subtitle = "Advanced Process Injection"
+link = "https://github.com/b1scoito/cozinha_loader"
+content = "Tool made using modern C++ that abuses the Windows API to achieve Remote Process Injection based on DLL files. Circumvents common detections by not using common Windows API calls like LoadLibrary and CreateRemoteThread, instead using advanced techniques such as Dynamic Memory Mapping."
+tags = ["c++", "process-injection", "windows-api", "evasion"]
+date = "2021"
+
+[[collection]]
+type = "card"
+title = "go-subdoc"
+subtitle = "Microsoft Word subDoc Injection"
+link = "https://github.com/offsec-org/go-subdoc"
+content = "Tool made with Go that injects a hidden malicious subdoc field in Microsoft Word documents. Commonly used to steal NTLMv2 hashes by using the SMB protocol. Based on research into Microsoft Office exploitation techniques."
+tags = ["go", "msoffice", "phishing", "ntlm", "subdoc"]
+date = "2021"
+
+[[collection]]
+type = "card"
+title = "Clicker"
+subtitle = "Desktop Automation Tool"
+link = "https://github.com/b1scoito/clicker"
+content = "Software for automation and simulation of repetitive human tasks in Desktop environments. Developed with C++ using Windows API features and frameworks for better system integration."
+tags = ["c++", "automation", "windows-api", "desktop"]
+date = "2020"
+
+[[collection]]
+type = "card"
+title = "VAC3 Inhibitor"
+subtitle = "Anti-Cheat Bypass"
+link = "https://github.com/zyhp/vac3_inhibitor"
+content = "Software for bypassing security routines implemented in Valve Anti-Cheat (VAC). Techniques based on Remote Process Hook Hijacking, Memory Hacking and DLL Injection abusing the dynamic linking of Windows processes."
+tags = ["c++", "anti-cheat", "bypass", "memory-hacking"]
+date = "2020"
+
+[[collection]]
+type = "card"
+title = "NjAttacker"
+subtitle = "C2 Disruption Tool"
+link = "https://github.com/b1scoito/njattacker"
+content = "Solution used as a disruptive measure against C2 hosts using the popular NjRat malware. By abusing bugs and lack of secure connection implementation in NjRat, it's possible to launch an amplified Denial-of-Service (DoS) attack at the application layer."
+tags = ["c++", "malware", "dos", "c2", "disruption"]
+date = "2019"
+

@@ -11,7 +11,7 @@ generate_feeds = true
 lang = "en"
 
 title = "Posts"
-subtitle = "welcome to my thoughts"
+subtitle = "what's in my head?"
 
 date_format = "%b %-d, %Y"
 

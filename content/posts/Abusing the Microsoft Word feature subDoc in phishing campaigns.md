@@ -3,6 +3,11 @@ title = "Abusing the Microsoft Word feature subDoc in phishing campaigns"
 date = 2022-04-19
 author = "biscoito"
 tags = "msoffice, office, word, maldoc, phishing, red-team, offensive-security, subdoc"
+
+[extra]
+toc = true
+copy = true
+featured = true
 +++
 
 ## Microsoft Office Exploitation
@@ -17,7 +22,7 @@ The [subDoc](https://c-rex.net/projects/samples/ooxml/e1/Part4/OOXML_P4_DOCX_sub
 
 To add the subDoc field to your Word document is as easy as editing these files in the OOXML package (zip file):
 
-### word/_rels/document.xml.rels
+### word/\_rels/document.xml.rels
 
 ```xml
 <Relationship Id="rId5" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/subDocument" Target="external_document.docx" TargetMode="External"/>
@@ -71,7 +76,7 @@ To use it is pretty simple, simply download one of the releases or install it to
 $ go-subdoc -input target.docx/docm -target example.com/127.0.0.1
 ```
 
-It will generate a new malicious payload with the _injected name at the end.
+It will generate a new malicious payload with the \_injected name at the end.
 
 ## Conclusion
 

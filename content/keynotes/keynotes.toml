@@ -1,0 +1,39 @@
+# Speaking Engagements & Keynotes
+[[collection]]
+type = "card"
+title = "Stealing Browser Cookies: Bypassing Chrome Security"
+subtitle = "DEFCON 33 - Red Team Village"
+link = "https://defcon.org"
+content = "Explored advanced security mechanisms that major browsers implemented to prevent cookie theft. Demonstrated vulnerabilities in Chrome's AppBound encryption, including 2-way DPAPI encryption and ChaCha20Poly1305 state-key encryption layers."
+tags = ["browser-security", "chrome", "encryption", "cookies"]
+featured = true
+date = "2025"
+
+[[collection]]
+type = "card"
+title = "Stealing Browser Cookies: Bypassing Chrome Security"
+subtitle = "BSides Las Vegas 2025"
+link = "https://bsideslv.org"
+content = "Same presentation covering browser security mechanisms, encryption methodologies, and Chrome's Device Bound Session Cookies (DBSC) technology designed to mitigate session hijacking through TPM chip-based encryption."
+tags = ["browser-security", "chrome", "encryption", "cookies"]
+featured = true
+date = "2025"
+
+[[collection]]
+type = "card"
+title = "Windows Admin-to-Kernel Elevation (CVE-2024-21338)"
+subtitle = "Hakai Offensive Security Blog"
+link = "https://labs.hakaioffsec.com"
+content = "Detailed analysis of CVE-2024-21338, a Windows admin-to-kernel elevation of privilege vulnerability. Exploits the appid.sys driver through IOCTL communication to corrupt the PreviousMode field in _KTHREAD thread context, enabling kernel access."
+tags = ["cve", "windows", "kernel", "lpe"]
+featured = true
+date = "2024"
+
+[[collection]]
+type = "card"
+title = "Introduction to Beacon Object Files in Red-Teaming"
+subtitle = "Ekoparty 2023"
+link = "https://ekoparty.org"
+content = "Presentation on COFF (Common Object File Format) and beacon_inline_execute. Covered how BOFs can be used to execute code in-memory without loading shellcode, bypassing AV/EDR protection and escalating C2 agent capabilities."
+tags = ["coff", "red-team", "bof", "cobalt-strike"]
+date = "2023"

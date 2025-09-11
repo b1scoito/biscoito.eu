@@ -3,6 +3,11 @@ title = "Underground Frequencies – A Revolução Cultural do Techno"
 date = 2025-09-10
 author = "biscoito"
 tags = "techno, music, history"
+
+[extra]
+toc = true
+copy = true
+featured = true
 +++
 
 Como alguém que passou incontáveis madrugadas perdido entre as batidas hipnóticas de clubs de Techno underground, e até em casa, posso dizer que o que começou nos porões de Berlim se transformou em algo muito maior do que música. O **Deep**/**Hypnotic** e **Dub [Techno](https://en.wikipedia.org/wiki/Techno)** que emergiram dos escombros da reunificação alemã criaram um **[fenômeno cultural global de US$ 12,9 bilhões](https://alataj.com.br/xpress/ims-report-2025)** que funciona tanto como movimento de resistência quanto como força de construção de comunidade em seis continentes.
