@@ -8,14 +8,13 @@ lang = 'en'
 footer = false
 
 # If you don't want to display id/bio/avatar, simply comment out that line
-name = "Serene Demo"
+name = "biscoito"
 id = "serene"
-bio = "programmer, he/him, we are young and life is fun"
-avatar = "img/avatar.webp"
+bio = "offensive security lead at hakai offensive security, non-binary, any"
 links = [
-    { name = "GitHub", icon = "github", url = "https://github.com/<your-username>" },
-    { name = "Twitter", icon = "twitter", url = "https://twitter.com/<your-username>" },
-    { name = "Email", icon = "email", url = "mailto:<your-email-address>" },
+    { name = "GitHub", icon = "github", url = "https://github.com/b1scoito" },
+    { name = "LinkedIn", icon = "twitter", url = "https://linkedin.com/~biscoito" },
+    { name = "Email", icon = "email", url = "mailto:eu@biscoito.eu" },
 ]
 
 # Show a few recent posts in home page
@@ -25,4 +24,4 @@ recent_more_text = "more »"
 date_format = "%b %-d, %Y"
 +++
 
-Hi, I'm ...
+hello, welcome to my personal thoughts and ideas.
