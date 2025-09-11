@@ -1,9 +1,9 @@
 +++
 title = "Underground Frequencies – A Revolução Cultural do Techno"
 description = "Descubra como Deep/Hypnotic e Dub Techno se transformaram de movimento underground berlinense em fenômeno cultural global de US$ 12,9 bilhões. Explore a história do Basic Channel, Berghain, e como a música eletrônica revolucionou desenvolvimento urbano, expressão política e formação de identidade social em seis continentes. Análise acadêmica completa sobre resistência cultural, venues como instituições culturais, e o reconhecimento UNESCO do techno como patrimônio imaterial."
-date = 2025-09-10
-updated = 2025-09-10 # optional
-draft = false # optional
+date = "2025-09-10"
+updated = "2025-09-10"
+draft = false
 
 [taxonomies]
 categories = ["music", "history"]
