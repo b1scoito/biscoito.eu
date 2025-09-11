@@ -27,7 +27,7 @@ jobs:
           REMOTE_HOST: ${{ secrets.VPS_HOST }}
           REMOTE_USER: ${{ secrets.VPS_USER }}
           REMOTE_PORT: 2237
-          TARGET: ${{ secrets.VPS_TARGET_DIR }}
+          TARGET: ${{ secrets.VPS_TARGET_DIR }}/public
           SOURCE: "public/" # Zola builds to the 'public' directory
           EXCLUDE: "/.git/, /.github/, /.obsidian/"
           ARGS: "-rltgoDzvO --delete" # Use rsync options for efficiency
