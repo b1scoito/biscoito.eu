@@ -1,13 +1,25 @@
 +++
 title = "Abusing the Microsoft Word feature subDoc in phishing campaigns"
+description = "Discover how to exploit Microsoft Word's subDoc feature for stealthy NTLMv2 hash theft in red team operations. Learn OOXML manipulation techniques, SMB share exploitation, and automated payload generation with go-subdoc tool for advanced phishing campaigns."
 date = 2022-04-19
-author = "biscoito"
-tags = "msoffice, office, word, maldoc, phishing, red-team, offensive-security, subdoc"
+updated = 2022-04-19 # optional
+draft = false # optional
+
+[taxonomies]
+categories = ["offensive-security"]
+tags = ["msoffice", "office", "word", "maldoc", "phishing", "red-team", "subdoc"]
 
 [extra]
+lang = "en"
 toc = true
 copy = true
 featured = true
+comment = false
+reaction = false
+math = false
+mermaid = false
+outdate_alert = false
+outdate_alert_days = 120
 +++
 
 ## Microsoft Office Exploitation
