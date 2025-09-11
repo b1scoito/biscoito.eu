@@ -13,7 +13,7 @@ id = "b1scoito"
 bio = "offensive security lead at hakai offensive security, non-binary, any pronoun"
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/b1scoito" },
-    { name = "LinkedIn", icon = "linkedin", url = "https://linkedin.com/~biscoito" },
+    { name = "LinkedIn", icon = "linkedin", url = "https://linkedin.com/in/~biscoito" },
     { name = "Email", icon = "email", url = "mailto:eu@biscoito.eu" },
 ]
 
