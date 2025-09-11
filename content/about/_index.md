@@ -1,6 +1,6 @@
 +++
-title = "About me"
-description = "About page of ..."
+title = "biscoito – about"
+description = "hello, welcome to my personal thoughts and ideas."
 template = "prose.html"
 insert_anchor_links = "none"
 
@@ -8,7 +8,7 @@ insert_anchor_links = "none"
 lang = 'en'
 
 title = "Posts"
-subtitle = "I write about ...."
+subtitle = "hello, welcome to my personal thoughts and ideas."
 
 math = false
 mermaid = false
@@ -17,4 +17,4 @@ comment = false
 reaction = false
 +++
 
-Hi, My name is ....
+hello, welcome to my personal thoughts and ideas.

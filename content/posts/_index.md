@@ -1,6 +1,6 @@
 +++
-title = "My Blog"
-description = "My blog site."
+title = "biscoito – posts"
+description = "hello, welcome to my personal thoughts and ideas."
 sort_by = "date"
 template = "blog.html"
 page_template = "post.html"
@@ -11,7 +11,7 @@ generate_feeds = true
 lang = "en"
 
 title = "Posts"
-subtitle = "I write about ...."
+subtitle = "welcome to my thoughts"
 
 date_format = "%b %-d, %Y"
 
