@@ -1,5 +1,5 @@
 +++
-title = "My Obsidian -> Zola Blog configuration"
+title = "My Obsidian -> Zola Blog configuration!"
 description = "My Obsidian -> Zola Blog configuration"
 date = "2025-09-11"
 updated = "2025-09-11"
