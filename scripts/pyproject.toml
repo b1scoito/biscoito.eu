@@ -1,0 +1,9 @@
+[project]
+name = "zola-obsidian-sync"
+version = "0.1.0"
+description = "Sync script for Obsidian to Zola blog posts"
+requires-python = ">=3.8"
+dependencies = ["python-frontmatter>=1.1.0", "toml>=0.10.2", "pyyaml>=6.0.2"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
