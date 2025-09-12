@@ -3,7 +3,7 @@ title = "Test"
 description = "Test"
 date = "2025-09-11"
 updated = "2025-09-11"
-draft = true
+draft = false
 
 [taxonomies]
 categories = ["test-cat"]
