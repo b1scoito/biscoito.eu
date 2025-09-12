@@ -324,14 +324,37 @@ def sync_obsidian_to_zola(
             )
         else:
             # Check if there are any changes to commit (including the files we just processed)
-            has_changes = check_git_changes(dest_path)
-            if has_changes:
-                git_commit_and_push(
-                    dest_path, "chore(script): sync with remote repository"
+            # First add all changes to staging area
+            try:
+                subprocess.run(["git", "add", "."], check=True, cwd=dest_path.parent)
+                # Now check if there are staged changes
+                result = subprocess.run(
+                    ["git", "diff", "--cached", "--quiet"],
+                    cwd=dest_path.parent,
+                    capture_output=True,
                 )
-            else:
-                print("INFO: No changes to commit.")
-                # Still check for remote changes
+                has_staged_changes = result.returncode != 0
+
+                if has_staged_changes:
+                    git_commit_and_push(
+                        dest_path, "chore(script): sync with remote repository"
+                    )
+                else:
+                    print("INFO: No changes to commit.")
+                    # Still check for remote changes
+                    if check_remote_changes(dest_path):
+                        print("INFO: Pulling latest changes from remote...")
+                        subprocess.run(
+                            ["git", "pull"], check=True, cwd=dest_path.parent
+                        )
+                        print(
+                            "SUCCESS: Successfully pulled latest changes from remote."
+                        )
+                    else:
+                        print("INFO: Repository is up to date with remote.")
+            except subprocess.CalledProcessError as e:
+                print(f"ERROR: Failed to stage changes: {e}")
+                # Fallback to checking remote changes
                 if check_remote_changes(dest_path):
                     print("INFO: Pulling latest changes from remote...")
                     subprocess.run(["git", "pull"], check=True, cwd=dest_path.parent)
