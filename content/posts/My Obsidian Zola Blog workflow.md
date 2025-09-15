@@ -3,7 +3,7 @@ title = "My Obsidian -> Zola Blog workflow"
 description = "My Obsidian -> Zola Blog workflow"
 date = "2025-09-11"
 updated = "2025-09-11"
-draft = true
+draft = false
 
 [taxonomies]
 categories = ["sysadmin"]
