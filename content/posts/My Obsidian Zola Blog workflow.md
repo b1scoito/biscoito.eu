@@ -212,3 +212,5 @@ This workflow represents more than just a technical solution—it's a philosophy
 The combination of Obsidian's excellent writing experience, Zola's performance, and modern CI/CD practices creates a publishing system that scales from personal blogs to professional publications while maintaining simplicity and reliability.
 
 The time invested in building this automation pays dividends with every post published, turning what used to be a multi-step, error-prone process into a single command execution.
+
+Fun fact: This blog post was written exactly with that same workflow showed here. ;)
