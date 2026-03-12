@@ -40,7 +40,7 @@ e o conhecimento? hoje em dia a luta de aprender algo te transforma. um estudant
 
 o mais bizarro é que isso **não vai acontecer de propósito**. ninguém vai sentar e planejar uma mente coletiva. vai acontecer do mesmo jeito que aconteceu com o celular. ngm te obrigou a ter um. mas **tenta viver sem**. tenta arrumar emprego, se localizar numa cidade, manter contato com as pessoas. a "escolha" tecnicamente existe mas na prática não.
 
-com interface cerebral vai ser igual. começa com medicina. um cara trancado no próprio corpo finalmente consegue se comunicar através de um implante. isso é lindo, ninguém discorda. depois vem conveniência. pra que fazer se a inteligência artificial faz pra você? pra que digitar se você pode pensar? pra que falar se vc pode transmitir exatamente o que sente? cada passo faz sentido sozinho. cada passo é voluntário. e cada passo te puxa mais pra dentro.
+com interface cerebral vai ser igual. começa com medicina. um cara trancado no próprio corpo finalmente consegue se comunicar através de um implante. isso é lindo, ninguém discorda. depois vem conveniência. pra que fazer se a inteligência artificial faz pra você? pra que digitar se vc pode pensar? pra que falar se vc pode transmitir exatamente o que sente? cada passo faz sentido sozinho. cada passo é voluntário. e cada passo te puxa mais pra dentro.
 
 uma decisão razoável por vez. cada geração achando os limites da anterior antiquados. ate que sair fora pareça sair fora de ser humano.
 
@@ -50,7 +50,7 @@ a gente sempre achou que esse espaço era o problema. que se fechasse todas as l
 
 mas o espaço era onde a gente guardava tudo que importava.
 
-a tentativa de alcançar o outro, essa coisa teimosa e linda e completamente desnecessária, talvez seja a única coisa realmente sagrada que a gente tem.
+a tentativa de alcançar o outro, essa coisa teimosa, linda e completamente desnecessária, talvez seja a única coisa realmente sagrada que a gente tem.
 
 e a gente tá abrindo mão dela aos poucos sem nem perceber.
 
