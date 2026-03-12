@@ -53,3 +53,5 @@ mas o espaço era onde a gente guardava tudo que importava.
 a tentativa de alcançar o outro, essa coisa teimosa e linda e completamente desnecessária, talvez seja a única coisa realmente sagrada que a gente tem.
 
 e a gente tá abrindo mão dela aos poucos sem nem perceber.
+
+feito em parceria com quem não sente nada disso.
