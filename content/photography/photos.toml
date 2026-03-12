@@ -1,0 +1,47 @@
+# Photography Collection
+# Each photo includes:
+# - img: path to image file (relative to /static/)
+# - title: photo title
+# - caption: optional description
+# - tags: array of tags for music selection
+#   - genre: "techno" or "jungle"
+#   - mood: descriptive tags like "dark", "vibrant", "intense", "ethereal"
+
+[[collection]]
+img = "photos/photo1.jpg"
+title = "Urban Shadows"
+caption = "Late night geometry in the city"
+tags = ["techno", "dark", "urban"]
+track = "techno/hypnotic-1.mp3"
+
+[[collection]]
+img = "photos/photo2.jpg"
+title = "Natural Rhythm"
+caption = "Where the forest meets the beat"
+tags = ["jungle", "vibrant", "organic"]
+track = "jungle/rhythm-1.mp3"
+
+[[collection]]
+img = "photos/photo3.jpg"
+title = "Neon Pulse"
+caption = "Electric dreams and synthetic nights"
+tags = ["techno", "intense", "electronic"]
+track = "techno/hypnotic-2.mp3"
+
+[[collection]]
+img = "photos/photo4.jpg"
+title = "Liquid Motion"
+caption = "Flowing through frequencies"
+tags = ["jungle", "fluid", "dynamic"]
+track = "jungle/rhythm-2.mp3"
+
+[[collection]]
+img = "photos/photo5.jpg"
+title = "Concrete Meditation"
+caption = "Industrial zen"
+tags = ["techno", "minimal", "contemplative"]
+track = "techno/hypnotic-3.mp3"
+
+# Add your photos here following the same structure
+# You can add as many photos as you want
+# Make sure the image paths and audio tracks match your actual files
