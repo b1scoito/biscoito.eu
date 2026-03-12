@@ -110,4 +110,213 @@
     border-left-color: var(--callout-important-color);
   }
 
+  /* ============================================
+     PHOTOGRAPHY PAGE STYLES
+     ============================================ */
+
+  /* Photography page: full viewport, minimal UI */
+  body.photography-page {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  #photography-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  /* Minimal navigation */
+  .photo-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    z-index: 100;
+    background: linear-gradient(to bottom, var(--bg-color) 0%, transparent 100%);
+    pointer-events: none;
+  }
+
+  .photo-nav .back-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    background: var(--bg-color);
+    border: 1px solid var(--text-decoration-color);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+  }
+
+  .photo-nav .back-link:hover {
+    background: var(--primary-pale-color);
+    transform: translateX(-4px);
+  }
+
+  /* Scroll wrapper with snap behavior */
+  .photo-scroll-wrapper {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 100vh;
+    width: 100%;
+  }
+
+  /* Individual photo sections - gallery style with significant spacing */
+  .photo-section {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15vh 2rem;
+    position: relative;
+    opacity: 0;
+    animation: fadeInPhoto 0.8s ease-in-out forwards;
+  }
+
+  @keyframes fadeInPhoto {
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Photo content container */
+  .photo-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  /* Photo image wrapper */
+  .photo-image-wrapper {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo-image {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: var(--img-border-radius);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    cursor: zoom-in;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  body.dark .photo-image {
+    filter: brightness(var(--dark-mode-img-brightness));
+  }
+
+  .photo-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Photo information */
+  .photo-info {
+    text-align: center;
+    max-width: 600px;
+    opacity: 0;
+    animation: fadeInInfo 1s ease-in-out 0.3s forwards;
+  }
+
+  @keyframes fadeInInfo {
+    to {
+      opacity: 1;
+    }
+  }
+
+  .photo-title {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    margin: 0 0 0.75rem 0;
+    color: var(--text-color);
+  }
+
+  .photo-caption {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--text-pale-color);
+    margin: 0;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .photo-section {
+      padding: 10vh 1rem;
+    }
+
+    .photo-content {
+      gap: 2rem;
+    }
+
+    .photo-image {
+      max-height: 60vh;
+    }
+
+    .photo-title {
+      font-size: 1.5rem;
+    }
+
+    .photo-caption {
+      font-size: 1rem;
+    }
+
+    .photo-nav {
+      padding: 1rem 1.5rem;
+    }
+
+    .photo-nav .back-link {
+      width: 2rem;
+      height: 2rem;
+      font-size: 1.25rem;
+    }
+  }
+
+  /* Extra small devices */
+  @media (max-width: 480px) {
+    .photo-section {
+      padding: 8vh 1rem;
+    }
+
+    .photo-image {
+      max-height: 50vh;
+    }
+
+    .photo-title {
+      font-size: 1.25rem;
+    }
+
+    .photo-caption {
+      font-size: 0.9375rem;
+    }
+  }
+
+  /* Smooth transitions for scroll */
+  .photo-section.active {
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  /* Lightense override for photography page */
+  body.photography-page .lightense-open {
+    cursor: zoom-out;
+  }
+
 </style>

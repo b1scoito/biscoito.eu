@@ -1,0 +1,65 @@
+{% extends "_base.html" %}
+
+{% block page %}photography-page{% endblock page %}
+{% block lang -%}
+{%- if section.extra.lang %}{{section.extra.lang}}{% else %}{{section.lang}}{% endif -%}
+{%- endblock lang %}
+{% block title %}{{ section.title }}{% endblock title %}
+{% block desc %}
+  {% if section.description %}
+    {% set desc = section.description %}
+  {% else %}
+    {% set desc = config.description %}
+  {% endif %}
+  <meta name="description" content="{{ desc }}">
+{% endblock desc %}
+
+{% block content %}
+<div id="photography-container">
+  <!-- Minimal header with navigation -->
+  <div class="photo-nav">
+    <a href="{{ get_url(path='/') }}" class="back-link" aria-label="Back to home">←</a>
+  </div>
+
+  <!-- Photo sections with scroll-snap -->
+  <div class="photo-scroll-wrapper">
+    {% for photo in section.extra.photos %}
+    <section class="photo-section"
+             data-tags="{{ photo.tags | join(sep=',') }}"
+             data-track="{{ get_url(path=photo.track) }}"
+             data-index="{{ loop.index0 }}">
+      <div class="photo-content">
+        <div class="photo-image-wrapper">
+          <img src="{{ get_url(path=photo.img) }}"
+               alt="{{ photo.title }}"
+               class="photo-image"
+               loading="lazy">
+        </div>
+        <div class="photo-info">
+          <h2 class="photo-title">{{ photo.title }}</h2>
+          {% if photo.caption %}
+          <p class="photo-caption">{{ photo.caption }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+    {% endfor %}
+  </div>
+
+  <!-- Hidden audio elements for crossfading -->
+  <div id="audio-player" style="display: none;">
+    <audio id="audio-current" preload="auto"></audio>
+    <audio id="audio-next" preload="auto"></audio>
+  </div>
+
+  <!-- Photo data for JavaScript -->
+  <script id="photo-data" type="application/json">
+    {{ section.extra | json_encode() | safe }}
+  </script>
+</div>
+{% endblock content %}
+
+{% block script %}
+<script src="{{ get_url(path='js/photography.js') }}"></script>
+<script src="{{ get_url(path='js/lightense.min.js') }}"></script>
+{% endblock script %}
