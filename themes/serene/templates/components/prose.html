@@ -1,0 +1,80 @@
+{# Prose components. Replaces the pre-0.23 macros/prose.html and the callout/quote/
+   detail/mermaid/youtube/figure shortcodes.
+
+   Everything except `back_link` is invoked from markdown content, so the emitted HTML
+   is handed to the markdown parser: keep lines flush-left and emit no blank lines,
+   otherwise 4-space indentation becomes an indented code block and a blank line ends
+   the raw HTML block. Hence the `{%-` whitespace-trimming control tags below. #}
+
+{% component back_link(path, text = "Back") %}
+<header>
+  <nav>
+    <a id="back-link" href="{{ path }}">← {{ text }}</a>
+  </nav>
+</header>
+{% endcomponent back_link %}
+
+{% component callout(name, title = "") %}
+{%- set icon = load_data(path="icon/" ~ name ~ ".svg") %}
+<blockquote class="callout {{ name }} {% if title %}has-title{% else %}no-title{% endif %}">
+{%- if title %}
+<p class="title">
+<span class="icon">{{ icon | safe }}</span>
+<strong>{{ title }}</strong>
+</p>
+<div class="content">{{ body | markdown | safe }}</div>
+{%- else %}
+<div class="icon">{{ icon | safe }}</div>
+<div class="content">{{ body | markdown | safe }}</div>
+{%- endif %}
+</blockquote>
+{% endcomponent callout %}
+
+{% component note(title = "") %}{% <callout name="note" title={title}> %}{{ body }}{% </callout> %}{% endcomponent note %}
+
+{% component tip(title = "") %}{% <callout name="tip" title={title}> %}{{ body }}{% </callout> %}{% endcomponent tip %}
+
+{% component important(title = "") %}{% <callout name="important" title={title}> %}{{ body }}{% </callout> %}{% endcomponent important %}
+
+{% component warning(title = "") %}{% <callout name="warning" title={title}> %}{{ body }}{% </callout> %}{% endcomponent warning %}
+
+{% component caution(title = "") %}{% <callout name="caution" title={title}> %}{{ body }}{% </callout> %}{% endcomponent caution %}
+
+{% component quote(cite = "") %}
+{%- set icon = load_data(path="icon/quote.svg") %}
+<blockquote class="quote">
+<div class="icon" style="display: none;">{{ icon | safe }}</div>
+<div class="content">{{ body | markdown | safe }}</div>
+{%- if cite %}
+<div class="from">{{ "— " ~ cite | markdown | safe }}</div>
+{%- endif %}
+</blockquote>
+{% endcomponent quote %}
+
+{% component detail(title, default_open = false) %}
+<details {% if default_open %}open{% endif %}>
+<summary><span>{{ title }}</span></summary>
+{{ body | markdown | safe }}
+</details>
+{% endcomponent detail %}
+
+{% component mermaid() %}
+<pre class="mermaid">
+{{ body }}
+</pre>
+{% endcomponent mermaid %}
+
+{% component youtube(id, autoplay = false) %}
+<div class="youtube">
+<iframe src="https://www.youtube.com/embed/{{ id }}{% if autoplay %}?autoplay=1&mute=1{% endif %}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+{% endcomponent youtube %}
+
+{% component figure(src, alt = "", height = "", width = "", caption = "") %}
+<figure>
+<img src="{{ src }}"{% if alt %} alt="{{ alt }}"{% endif %}{% if height %} height="{{ height }}"{% endif %}{% if width %} width="{{ width }}"{% endif %}>
+{%- if caption %}
+<figcaption>{{ caption | trim | markdown | safe }}</figcaption>
+{%- endif %}
+</figure>
+{% endcomponent figure %}
