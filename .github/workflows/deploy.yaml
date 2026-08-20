@@ -15,7 +15,11 @@ jobs:
           submodules: recursive
 
       - name: Install Zola
-        uses: taiki-e/install-action@zola
+        # Pinned deliberately: the vendored serene theme is ported to Tera 2 /
+        # zola 0.23 and will not build on either older or newer majors.
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.23.3
 
       - name: Build Site
         run: zola build

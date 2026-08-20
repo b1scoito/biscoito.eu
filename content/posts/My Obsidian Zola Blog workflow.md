@@ -128,6 +128,7 @@ Key features:
 
 The GitHub workflow triggers on every push to the main branch:
 
+{% raw %}
 ```yaml
 name: Build and Deploy Zola Site
 
@@ -163,6 +164,7 @@ jobs:
           EXCLUDE: "/.git/, /.github/, /.obsidian/"
           ARGS: "-rltgoDzvO --delete"
 ```
+{% endraw %}
 
 ### 4. Production Environment
 

@@ -9,4 +9,4 @@ title = "Projects and Research"
 subtitle = "Security research, CVEs, and open source projects"
 +++
 
-{{ collection(file="projects.toml") }}
+{{ <collection file="projects.toml" dir={section.path} /> }}

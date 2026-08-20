@@ -9,4 +9,4 @@ title = "Keynotes"
 subtitle = "Conference presentations and keynotes"
 +++
 
-{{ collection(file="keynotes.toml") }}
+{{ <collection file="keynotes.toml" dir={section.path} /> }}
