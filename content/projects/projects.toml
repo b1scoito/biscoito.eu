@@ -1,6 +1,36 @@
 # Security Research & CVEs
 [[collection]]
 type = "card"
+title = "Mirage"
+subtitle = "Transport-Agnostic Traffic Morphing"
+link = "https://github.com/hakaioffsec/mirage"
+content = "Rust library implementing DAITA-lineage traffic shaping for C2 evasion: constant-size 1440-byte frames that collapse the packet-size histogram, Poisson-distributed cover traffic that flattens beacon timing autocorrelation, and Maybenot-style probabilistic pattern distortion via state machines. Transport agnostic - reshapes sizes, timing, and burst patterns over any existing transport. Led to the Shapeshifting C2 talk at DEF CON 34 Red Team Village."
+tags = ["rust", "c2", "traffic-shaping", "daita", "evasion"]
+featured = true
+date = "2026"
+
+[[collection]]
+type = "card"
+title = "Lyra"
+subtitle = "LLVM IR Obfuscator for Rust"
+link = "https://github.com/hakaioffsec/lyra"
+content = "Open-source, cargo-native LLVM IR obfuscator for Rust. Intercepts each crate during a normal cargo build via RUSTC_WRAPPER, transforms the LLVM IR with a configurable pass pipeline (string encryption, basic-block shuffling, indirect branches, mixed Boolean-arithmetic), and recompiles with llc + clang before the real linker runs. Zero changes to rustc or the target project's source code. Led to a talk at DEF CON 34 Malware Village."
+tags = ["rust", "llvm", "obfuscation", "red-team"]
+featured = true
+date = "2026"
+
+[[collection]]
+type = "card"
+title = "BrowserVoyage"
+subtitle = "Browser Cookie and Credential Extraction"
+link = "https://github.com/hakaioffsec/browservoyage"
+content = "Cross-platform Rust tool and library to extract cookies and passwords from major browsers (Chrome, Firefox, Edge, Safari, Brave, Chromium) passively, with no process injection. Bypasses Chrome's AppBound encryption, including the 2-way DPAPI scheme and ChaCha20Poly1305 state-key layer, and covers Gecko's ASN.1 3DES/AES-256 schemes, Chromium on macOS (PBKDF2), and WebKit binary cookie files. Led to talks at DEF CON 33 Red Team Village and BSides Las Vegas 2025."
+tags = ["rust", "browser-security", "cookies", "appbound", "red-team"]
+featured = true
+date = "2025"
+
+[[collection]]
+type = "card"
 title = "CVE-2024-21338"
 subtitle = "Windows Local Privilege Escalation"
 link = "https://github.com/hakaioffsec/CVE-2024-21338"

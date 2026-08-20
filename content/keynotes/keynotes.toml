@@ -1,6 +1,26 @@
 # Speaking Engagements & Keynotes
 [[collection]]
 type = "card"
+title = "Shapeshifting C2: Applying DAITA Traffic Shaping to Defeat DPI and DLP Detection"
+subtitle = "DEFCON 34 - Red Team Village"
+link = "https://github.com/hakaioffsec/mirage"
+content = "Demonstrated how three techniques from VPN privacy research - constant-size packet morphing, Poisson cover traffic injection, and Maybenot-inspired probabilistic pattern distortion - can be adapted for offensive C2 operations, layered with application-layer malleable profiles (Microsoft Graph, Slack, Okta) and cloud storage dead-drops (S3, OneDrive) to defeat ML-based DPI and DLP detection at the behavioral, flow, and application layers."
+tags = ["c2", "traffic-shaping", "daita", "evasion"]
+featured = true
+date = "2026"
+
+[[collection]]
+type = "card"
+title = "Lyra: An LLVM IR Obfuscator for Rust"
+subtitle = "DEFCON 34 - Malware Village"
+link = "https://github.com/hakaioffsec/lyra"
+content = "Presented Lyra, an open-source, cargo-native LLVM IR obfuscator for Rust. Covered the RUSTC_WRAPPER interception architecture, Windows/MSVC engineering challenges, and live before-and-after demos in IDA Pro, Ghidra, and Binary Ninja - including a YARA rule matching the plain build returning zero hits on the obfuscated binary, and consecutive unseeded builds producing different hex patterns."
+tags = ["rust", "llvm", "obfuscation", "malware"]
+featured = true
+date = "2026"
+
+[[collection]]
+type = "card"
 title = "Stealing Browser Cookies: Bypassing Chrome Security"
 subtitle = "DEFCON 33 - Red Team Village"
 link = "https://defcon.org"
